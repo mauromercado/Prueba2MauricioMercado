@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="formulario2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <div class="container">
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="pag1.html">
+                    <img src="imgs/mariostar.png" width="40" height="40" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sistema Solar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Via Lactea</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="formularioPF2.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+
+
+    <div class="form-register">
+        <form class="row g-3 needs-validation" novalidate action="recibe.php"  method="post">
+        <div class="container">
+             <h2>Contactanos para Cursos y Charlas</h2>
+
+             <div class=" position-relative">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class=" controls" name="txt_nombre" id="txt_nombre" placeholder="Ingrese su Nombre" required>
+                <!-- Mensajes para validación   -->
+                <div class="valid-feedback">¡Campo válido!</div>
+                <div class="invalid-feedback">Debe completar los datos.</div>
+            </div>
+            <div class=" position-relative">
+                <label for="nombre" class="form-label">Apellido Paterno</label>
+                <input type="text" class=" controls" name="txt_nombre" id="txt_nombre" placeholder="Ingrese Apellido Paterno" required>
+                <!-- Mensajes para validación   -->
+                <div class="valid-feedback">¡Campo válido!</div>
+                <div class="invalid-feedback">Debe completar los datos.</div>
+            </div>
+            <div class=" position-relative">
+                <label for="nombre" class="form-label">Apellido Materno</label>
+                <input type="text" class=" controls" name="txt_nombre" id="txt_nombre" placeholder="Ingrese Apellido Materno" required>
+                <!-- Mensajes para validación   -->
+                <div class="valid-feedback">¡Campo válido!</div>
+                <div class="invalid-feedback">Debe completar los datos.</div>
+            </div>
+            <div class=" position-relative">
+                <label for="nombre" class="form-label">Email</label>
+                <input type="email" class=" controls" name="correo" id="correo" placeholder="Ingrese email" required>
+                <!-- Mensajes para validación   -->
+                <div class="valid-feedback">¡Campo válido!</div>
+                <div class="invalid-feedback">Debe completar los datos.</div>
+            </div>
+
+    
+                     <label for="">Area interes</label>
+                     <select class="form-select controls" name="" id="" placeholder="Ingrese estado civil">
+                         <option value=""></option>
+                         <option value="">Astronomia</option>
+                         <option value="">Astrologia</option>
+                         <option value="">Astrofisica</option>
+                         <option value="">Cosmologia</option>
+                     </select>
+                     <label for="">Genero</label> <br>
+                     <input type="radio" class="form-check-input controls" name="rbt_genero" id="rbt_genero" value="F">
+                     <label for="">Femenino</label>
+                     <input type="radio" class="form-check-input controls" name="rbt_genero" id="rbt_genero" value="M">
+                     <label for="">Masculino</label> <br>
+                     <label for="">Comentarios</label>
+                     <textarea class="controls" name="" id="" cols="20" rows="5"></textarea>
+    
+    
+                        <input type="submit" class="btn btn-primary" value="Enviar">
+                        <input type="reset" class="btn btn-primary" value="Limpiar Formulario">
+    
+    
+        </div>
+        </form>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+
+        (function () {
+        'use strict'
+
+        // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+        var forms = document.querySelectorAll('.needs-validation')
+
+        //Recorremos los forms y evitamos en envío sin validacion
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+body{
+   background-image: url(imgs/fondo2.jpg);
+}
+
+.titulo{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: bisque;
+}
+
+.texto{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: antiquewhite;
+}
+
+
